@@ -1,5 +1,3 @@
-{% load staticfiles %}
-
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
     <head>
@@ -12,18 +10,14 @@
          — Blog & To-do-list & BBS social media | Heroku.">
         <!--title  -->
         <title>
-            {% block title %}
                 Jamie Huang's Resume
-            {% endblock %}
         </title>
         <!-- Bootstrap CSS & 自己 CSS  -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href= "{% static "css/resume.css" %}" >
+        <link rel="stylesheet" href= "resume.css" >
     </head>
-    {% block content %}
     <body>
         <div class="ori-link">
-            <a href="{% url 'index' %}" target="_blank">
+            <a href="https://jamie-web-heroku.herokuapp.com/index/" target="_blank">
                 Jamie's Blog 首頁
             </a>
         </div>
@@ -39,7 +33,7 @@
                 </div>
             </div></div>
             <div class="mid-left">
-            <img class="photo" src="{% static 'images/self.png' %}"/>
+            <img class="photo" src="https://i.imgur.com/xSr5dti.png"/>
               <h3 class="about">
                 About-me
               </h3>
@@ -171,7 +165,7 @@
             </div>
             <div class="my-ach">
               <div class="work1">1. Django MTV 網站部署
-                  <img class ="work1-img" src="{% static 'images/bbs.png' %}"
+                  <img class ="work1-img" src="https://i.imgur.com/IR6OkFo.png"
                        alt="Django-website-bbs">
                 <div class="work1-p">
                   <ul>
@@ -183,7 +177,7 @@
                 </div>
               </div>
                 <div class="work2">2. Web-Craweler
-                <img class="work2-img" src="{% static 'images/keyword.png' %}"
+                <img class="work2-img" src="https://i.imgur.com/kXNlh3m.png"
                      alt="Web Crawler Word Cloud">
                 <div class="work2-p">
                   <ul>
@@ -196,7 +190,6 @@
             </div>
           </div>
           <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    {% endblock %}
     </body>
     </html>
 
