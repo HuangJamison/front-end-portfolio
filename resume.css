@@ -17,7 +17,7 @@ html,body{
   margin-left:auto; margin-right:auto;
   box-shadow: 10 px 10px 10px rgba(0,0,0,0.2);
   box-sizing:border-box;
-  min-width: 1200px; min-height: 1200px;
+  min-width: 1500px; min-height: 1200px;
 
 }
 .name{
@@ -34,6 +34,7 @@ html,body{
 .re-en-name{
   font-size:12px; letter-spacing:3px;
 }
+
 .slogan{
   font-size:16px;
   letter-spacing:5px;
