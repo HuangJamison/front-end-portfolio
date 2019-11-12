@@ -41,7 +41,7 @@ function float_num(dot){
         console.log(num);
         document.querySelector(".result").innerText = num;
     }else{ //已經為小數啦!
-        document.querySelector(".msg").innerText = "Already float!";
+        document.querySelector(".msg").innerText = "Already Float!";
         document.querySelector(".msg").style.display = "inline-block";
     }
 }
