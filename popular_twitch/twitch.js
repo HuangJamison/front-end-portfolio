@@ -11,17 +11,18 @@ function put_live(json){
     // 把抓好的json放到頁面上
     const live_container = document.querySelector('.live'); 
     live_container.innerHTML = ''; //清空
-    for(let i=0; i<json.length;i++){
+    console.log(json.streams.length)
+    for(let i=0; i<json.streams.length;i++){
         const game_tv = document.createElement("div");  //創建物件
         game_tv.classList.add('game-tv'); // 加入class
         game_tv.innerHTML = `
         <a class="game-link" href="${json.streams[i].channel.url}" target="_blank">
         <div class="lang">Language ： ${json.streams[i].channel.broadcaster_language}</div>
-        <div class="tv-name">Topic ： ${json.streams[i].channel.status}</div>
-        <div class="viewer">Viewer：${json.streams[i].channel.viewers}</div>
+        <div class="viewer">Viewer：${json.streams[i].viewers}</div>
         <div class="pic">
             <img src="${json.streams[i].preview.medium}">
         </div>
+        <div class="tv-name">Topic ： ${json.streams[i].channel.status}</div>
         </a>
         `; // 把資訊引入
         live_container.appendChild(game_tv);
@@ -43,6 +44,7 @@ function download_twitch(){
     request.setRequestHeader('Client-ID',client);
     request.send();
 }
+
 document.querySelector(".container").addEventListener("click", 
     function(e){
         if (e.target.classList.value === 'lol'){
