@@ -7,7 +7,7 @@ function too_much_number(num){
     return num.substring(0,10);
 }
 function new_number(number){
-    // 看是否要新增第二個數字
+    // 看是否要新增第二個數字 因為cacu_opr有運算子length不為0 剛存進去array 長度為1 
     if ((cacu_opr.length!=0) && (cacu_num.length ===1)){ // 因為cacu_num.push後length=2 也就是說只會進去1次
         cacu_num.push(""); //[數字,""]
         document.querySelector(".result").innerText =""; //變成空的
@@ -160,4 +160,3 @@ document.querySelector(".caculator").addEventListener("click",
         }
     }
 )
-console.log(1.2/3);
