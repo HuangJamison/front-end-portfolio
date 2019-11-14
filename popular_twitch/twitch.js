@@ -48,6 +48,8 @@ function download_twitch(){
 document.querySelector(".container").addEventListener("click", 
     function(e){
         if (e.target.classList.value === 'lol'){
+            game_name = encodeURIComponent('League of Legends');
+            base_url = `https://api.twitch.tv/kraken/streams/?game=${game_name}&limit=${game_num}`;
             download_twitch();
         }else if (e.target.classList.value === 'hs'){
             game_name = encodeURIComponent('Hearthstone');
