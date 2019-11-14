@@ -10,6 +10,7 @@ body{
     font-size: 36px;
     line-height: 40px;
     font-weight: 300;
+    word-break: normal;
 }
 .container{
     min-width: 350px;
@@ -17,6 +18,7 @@ body{
     flex-direction: column;
     align-items: center;
     color: white;
+    box-sizing: border-box;
 }
 .lol , .hs{
     background-color: #408080;
@@ -38,7 +40,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-width: 300px;
+    min-width: 350px;
+    box-sizing: border-box;
 }
 .game-tv{
     margin: 20px 25px 20px 25px;
@@ -48,9 +51,10 @@ body{
     cursor: pointer;
     border:dashed 1.5px oldlace;
     padding:10px;
-    width:500px;
+    width:350px;
     text-shadow: 0.1px 0 3px rgba(255,255,255,0.7);
     transition: all 0.3s ease-in;
+    box-sizing: border-box;
 }
 .game-link{
     text-decoration: none;
@@ -58,7 +62,7 @@ body{
 }
 .tv-name{
     margin: 10px 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: oldlace;
 }
