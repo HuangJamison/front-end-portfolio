@@ -1,3 +1,43 @@
 ul{
-  list-style: none;  
+  list-style: none; 
+  margin:0px 
+}
+body{
+  background-color: #eee;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work{
+  font-size: 20px;
+  color: #eee;
+  line-height: 30px;
+}
+.work > a{
+  color: #424242;
+  transition: all 0.15s ease-in;
+}
+.work:nth-child(2){
+  padding-left: 30px;
+}
+.work:nth-child(2) > ul > li > a{
+  color: #424242;
+  line-height: 50px;
+  transition: all 0.15s ease-in;
+}
+.title{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  margin: 0px;
+}
+.work:nth-child(2) > ul > li > a:hover{
+  color: whitesmoke;
+  background-color: rgb(110, 105, 105);
+}
+.work > a:hover{
+  color: whitesmoke;
+  background-color: rgb(110, 105, 105);
 }
