@@ -222,7 +222,7 @@ html,body{
 .hp-php{
   border:solid 3px #50b6bb;
   position:absolute;
-  width:188px; height:18px;
+  width:200px; height:18px;
   background-color:#50b6bb;
   border-radius:12px;
   top:25px;left:110px;
@@ -238,7 +238,7 @@ html,body{
 .hp-db{
   border:solid 3px #50b6bb;
   position:absolute;
-  width:163px; height:18px;
+  width:188px; height:18px;
   background-color:#50b6bb;
   border-radius:12px;
   top:25px;left:110px;
